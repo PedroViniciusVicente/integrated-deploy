@@ -1,18 +1,18 @@
 # This config was automatically generated from your source code
 # Stacks detected: deps:node:cocktail-menu,deps:python:cocktail-api
-# aaaaa
+# aaaaabbb
 version: 2.1
 
 jobs:
-	greetings:
-		docker:
-			- image: cimg/base:stable
-		steps:
-			- checkout
-			- run:
-				command: echo "Bem vindo ao CircleCI!!!"
+  greetings:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+        command: echo "Bem vindo ao CircleCI!!!"
 
 workflows:
-	hello-world:
-		jobs:
-			- greetings
+  hello-world:
+    jobs:
+      - greetings
